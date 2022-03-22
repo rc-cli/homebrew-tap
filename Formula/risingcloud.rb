@@ -8,7 +8,7 @@ class Risingcloud < Formula
       sha256 "dbc1ba04f62a7d6640a69bdabcfc3d10f339e4b4dc0b5a958a9c58a2f186359b"
 
       def install
-        bin.install "risingcloud_darwin_amd64" => "risingcloud"
+        bin.install "risingcloud-public.s3-us-west-1.amazonaws.com" => "risingcloud"
 
         bash_output = Utils.safe_popen_read("#{bin}/risingcloud", "completion", "bash")
         (bash_completion/"risingcloud").write bash_output
