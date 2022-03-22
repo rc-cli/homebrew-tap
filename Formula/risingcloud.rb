@@ -9,13 +9,6 @@ class Risingcloud < Formula
 
       def install
         bin.install "risingcloud-public.s3-us-west-1.amazonaws.com" => "risingcloud"
-
-        bash_output = Utils.safe_popen_read("#{bin}/risingcloud", "completion", "bash")
-        (bash_completion/"risingcloud").write bash_output
-        zsh_output = Utils.safe_popen_read("#{bin}/risingcloud", "completion", "zsh")
-        (zsh_completion/"_risingcloud").write zsh_output
-        fish_output = Utils.safe_popen_read("#{bin}/risingcloud", "completion", "fish")
-        (fish_completion/"risingcloud.fish").write fish_output
       end
     end
   
