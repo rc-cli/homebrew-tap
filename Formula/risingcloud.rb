@@ -1,12 +1,12 @@
 class Risingcloud < Formula
     desc ""
     homepage "https://risingcloud.com"
-    version "1.2.65"
+    version "1.2.66"
   
     on_macos do
       if Hardware::CPU.intel?
         url "risingcloud-public.s3-us-west-1.amazonaws.com/risingcloud_darwin_amd64"
-        sha256 "aa7dcf4e5f232853f15110d8c56470d97f3fff9682c46e4c3648fa9f45ef12df"
+        sha256 "079d3a257f4bb9819f72639ef935b9be09fa664959298f16e08171f954bc7a18"
 
         def install
           bin.install "risingcloud-public.s3-us-west-1.amazonaws.com" => "risingcloud"
@@ -14,7 +14,7 @@ class Risingcloud < Formula
       end
       if Hardware::CPU.arm?
         url "risingcloud-public.s3-us-west-1.amazonaws.com/risingcloud_darwin_arm64"
-        sha256 "663e973cb08850022f4ddd7dfe7060e9b3ea0369126c132a62a30053fa830bc1"
+        sha256 "1e9073052b5d1d6cd4442581365da615cc2d8899e3f63e8fa878050d99ed3b15"
 
         def install
           bin.install "risingcloud-public.s3-us-west-1.amazonaws.com" => "risingcloud"
