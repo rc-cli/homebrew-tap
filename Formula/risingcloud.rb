@@ -1,7 +1,7 @@
 class Risingcloud < Formula
     desc ""
     homepage "https://risingcloud.com"
-    version "1.2.71"
+    version "1.2.72"
   
     on_macos do
       if Hardware::CPU.intel?
