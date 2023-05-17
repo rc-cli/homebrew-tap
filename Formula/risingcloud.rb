@@ -17,7 +17,7 @@ class Risingcloud < Formula
         sha256 "32bde4eca0474fa3265d0f8d12968e0febd43c55026186bed64db26f923efffb"
 
         def install
-          bin.install "risingcloud_darwin_arm64" => "risingcloud""
+          bin.install "risingcloud_darwin_arm64" => "risingcloud"
         end
       end
     end
